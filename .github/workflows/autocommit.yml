@@ -30,6 +30,7 @@ jobs:
           arr[1]="[/] Commited"
           arr[2]="[-] Commited"
           arr[3]="[\] Commited"
+
           rand=$[$RANDOM % ${#arr[@]}]
 
           git commit -m "${arr[$rand]}"
